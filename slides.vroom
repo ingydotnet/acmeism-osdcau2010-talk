@@ -1,0 +1,843 @@
+---- config
+title: Vroom!
+indent: 5
+height: 21
+width: 65
+skip: 20
+script: '>>'
+---- skip
+  - Vroom
+  - WSGI, Rack, PSGI - Acmeism for Web
+  - Think big as you can
+---- center
+C'Dent, the Acmeism and Everyone
+
+by Ingy döt Net
+
+OSDC - 24 November, 2010 - Melbourne, Australia
+----
+== Welcome to OSDC!!
+
+----
+== Today I'm Talking About
+
+* Acmeism and my fresh Acmeist codez:
+  
+  * C'Dent
+  * TestML
+  * Stardoc
+  * Pegex
+  * YAML
+  * JSYNC
+
++  And how to release a module in 6 impossible languages...
+
++  ... before breakfast!
+----
+Question:
+
++== What is the #1 driving force behind OSDC?
+
++Answer: (hint: it's one word...)
+
++== Java!
+
++I have proof...
+
++>>qiv -f -i image/powells.png
+
++Well some people think PHP
+
++>>qiv -f -i image/craigslist.png
+----
+== The Four P's of Open Source?
+
++* Perl
+* Python
+* PHP
+* Ruby (Ruby's more evolved)
+
+----
+== Java and C# vs The Four P's
+
+* Java was the million dollar baby of Sun
+  * From "Unknown" to "Billboard" almost overnight
+* C# was Microsoft's retort
+
++* The P languages were founded on their own merits
+* Pimped by brilliant and passionate hackers
+
+----
+== The Four P's Unite at OSDC
+
+* OSDC is about great language communities Sticking Together
++* and Sticking it to the Man!
+
++* But hey...
+
+        We have some good Java talks going on too :)
+
++* Also: JavaScript, Scala, Go, Genyris
+
+* And: MySQL, PostgreSQL, Parrot, Git
+----
+== OSDC is a Conference for Hackers...
+
++== Let's look at some code!
+
+---- include yaml-examples
+
+----
+== So Who am I?
+
+* My name is Ingy dot Net
+
++* or better yet... Ingy döt Net
+
+* I am an Acmeist Open Source Hacker
+
+  * 100+ Perl modules on CPAN
+  * Several JavaScript modules on JSAN
+  * Several Python modules on PyPi
+  * No Ruby modules...
++     ...YET!!!
+
++>>firefox http://ingy.net
+----
+== Where am I?
++>>qiv -f -i image/australia*
+----
+== WTF am I doing here?
+
+* Completing my OSDC pilgrimage!
+  * Taipei, Paris, Melbourne
+
++* Helping Strategic Data
+  * Josh and Brad
+  * I love a good name
+    * YAML
+    * Acmeism
+    * C'Dent
++    * Strategic Data
++  * Strategic is the also the newest Perl namespace...
+    * Strategic::Wiki
+    * Strategic::Dots
+
++* Racing my Bicycle
++>>qiv -f -i -W200 image/roundabout.gif
+----
+== I'm also Learning Brand New Words
+
++* Australia
+
++* Australian
+
++* Tip
+
++  Tip Jar == Trash Can?
+----
+== A Brief History of Ingy...
+
++== ...and his relationship to OSDC
+----
+== But Before That!!!
+
++* This is my first (and possibly last) Keynote Presentation!
+
++* So...
++  * I want to take advantage...
++    * Do something exciting...
++      * Something dangerous!
+
++* I will delete all the dot files in my home directory!!!
++  * Right now!!!
+
++* Why???
++  * Because this is Unix...
++    * AND AUSTRALIA!
+
++== And I Can!!!
++>>gnome-terminal
+----
+== WTF?
+
+* Two weeks ago I gave a talk to the Melbourne Perl Mongers
+* About a program called ...
+
++  * That's literally the name: Dot Dot Dot!
+
++* But the software was not complete :(
+
+* Now it is ...
+
+  And I will use it to reinstall my precious dots
+
++>>gnome-terminal
++>>firefox https://github.com/ingydotnet/...
+----
+== So, without further adieu
+
+== A Brief History of Ingy...
+
+== ...and his curious relationship to OSDC and Australia
+----
+== 1982
+
+* Basic on Apple IIe
+* Fortran on IBM Punchcards
+* Vax Assembly
+* Pascal
+----
+== 1983 - 1987
+
+* IBM Cobol
+* IBM 370 Assembler
+  * x40 is Space Char
+  * x40 is also a LH instruction
+  * Code is Data
+
+    (One of the youngest mainframe hackers in the world) 
+----
+== 1988 - 1998
+
+* IBM Assembler
+* Dos and Windows
+* Watched Unix take over
+* Compiled Linux 0.99b
+* Birth of the Internet
+* WinGopher
+* Got left behind
+----
+== 1999
+
+* Switched from Assembler to Perl
+  * A natural transition
+* 370 is the Perl of Assembly languages!
+* Dreamed of writing a CPAN Module some day...
+----
+== 2000
+
+* Met Damian Conway
+* Went to TPF
+* Wrote Inline.pm (my first CPAN module)
+---- perl,i0
+use Inline C => <<'END_C';
+
+void greet() {
+    printf("Hello, world\n");
+}
+END_C
+
+greet;
+----
+== 2000
+
+* Met Damian Conway
+* Went to TPF in Monterey
+  * Fell in love with Open Source
+* Wrote Inline.pm
+  * Inline let's you write Perl subs in C
+  * And 25 other languages
+
++* Wrote an article for TPJ
+* ActiveState
+  * Perl Python Tcl
+----
+== 2001
+
+* German Perl Workshop
+* Started YAML
+* Spoke at first OSCON in San Diego
+* Inline won awards
+* 9-11 happened
+----
+== 2002
+
+* Databuilt
+* Ryan King
+  * Wiki
+  * Vim
+  * Extreme Programming
+* OSCON 2, Schwern and Portland
+* Free from Employment
+----
+== 2003
+
+* Ward Cunningham
+* Kwiki
+* Socialtext
+* Autrijus Tang
+* Foo Camp (foocamp.com)
+----
+== 2004
+
+* YAPC::Asia in Taiwan
+* Autrijus, CLKao and Gugod
+* Autrijus' 500 Years
+----
+== 2005
+
+* Perl 6, Pugs
+* YAPC::Taiwan again
+* Au^3
+  * Autrijus -> Audrey in Australia
+  * OSDC
+----
+== 2006
+
+* Move to Chubei/Gugod
+* YAPC::Tokyo
+* Audrey brings OSDC back to Taiwan!
+* Brad Bowman in Taipei
+* Naked at OSCON
+----
+== 2007
+
+* YAPC::Tokyo again
+* OSDC Taiwan again
+* Near Death Accident
+* Audrey MIA
+----
+== 2008
+
+* Audrey and Socialtext
+* Naked in Chicago
+* Lost 25kg
+  * That's a big suitcase!
+* Adam Kennedy and Microsoft
+----
+== 2009
+
+* Yuval Kogman and Chamonix
+* NPW
+* Unbound from Employment
+* Acmeism coined at OSCON
+* Jacob Appelbaum
+* OSDC Paris
+----
+== 2010
+
+* hello-world in 9 languages, C'Dent is born
+* Python, PyPI, SeaPIG
+* OSDC Taiwan * Au++
+* Josh Heumann, Paul Fenwick, Jacinta, Brad Bowman
+* Nick Patch, Perl6, TestML, Pegex
+* Apple, Eee and Ubuntu
+* Strategic Data and the Original OSDC
+
++== Here I Am!
+----
+== Ingy's PYRL
+
+* PYRL?
++* Projects You'll Really Like!!
+
++>>firefox http://ingy.pyrl.org
+----
+== Introducing Acmeism
+
+I have ported a lot of code:
+
+* Perl to JavaScript   (Jemplate)
+* JavaScript to Perl   (pQuery)
+* Python to Perl       (PyYaml)
+* Perl to Python       (TestML)
+
+Between several languages...
+----
+== Introducing Acmeism
+
+Guess what I found out???
+
++THEY ARE ALL THE SAME!!!
+
+    Perl == Python == JavaScript == Ruby
+
+* Line for line. Idiom for idiom.
+* They tell computers what to do.
+* OO languages all have a common set of basic components.
+----
+== Introducing Acmeism
+
+* OSCON 2009 - YAML & Acmeism
+* Equally attended by Perl, Python, PHP and Ruby
+
+* I realized the theme to all my programming
+* Involve many languages
+* Inline, YAML, Jemplate, TestML, C'Dent
+
+----
+== Introducing Acmeism
+
+* Programming languages divide programmers
+* Like natural languages divide people
+* Tower of Babel effect
+
+* Acmeism is about programming above the language barrier
+* It isn't easy... yet
+* But it is possible
+
+----
+== What means "Acmeism"?
+
+* Acmeism is a word I made up
+* To describe the theme to my programming ideas
+
+* It's a defunct Russian Poetry Movement
+  * 1910-1912 in St Petersburg
+* It's a nod to "the best" Perl modules
+  * like Acme::Bleach
+  * and Acme::Scurvy::Whoreson::BilgeRat::Backend::pirate
+
+* YAML @ OSCON 2009 - Idea
+* Paris OSDC 2009 - Vapor
+* OSDC Taiwan 2010 - Alive
+
+----
+== OSDC - The Acmeist Conference
+
+* Perl
+* Ruby
+* JavaScript
+* Python
+* PHP
+* Java
+
+== OSCON - The (slightly more expensive) Acmeist Conference ;)
+
+----
+== Modules - 包子 for Programmers
+
+* Modules are the Nexus Point of the Universe
++ * At least my universe
+
+* Modules are ICs for Software
++  * IC == Integrated Circuits
+  * IC == Idea Containers
+
+* Modern Programming == Using Good Modules
+
+* Modules keep things DRY
+
+----
+== Acmeist Modules are Portable
+
+* Modules don't need to be fancy under the hood
+* Useful and _portable_ modules can be baked w/ staples:
+
+  * Modules, Classes & Methods
+  * Loops & Conditionals
+  * Variables & Assignments
+  * Builtin Functions & Standard Library
+  * Module Inclusion & Exceptional Handling
+  * Inheritance and Identity
+
+  * Regular Expressions?
+
+----
+== Ingy's Modules
+
++* Publishing your own Ideas take's guts.
+* But once you start, it gets easier and easier.
+
++* Inline.pm was my first module
+* It was a tough act to follow
+
++* Now I have a new goal. (to reach modular enlightenment)
++* Release a new module every day!
++* In 6 impossible languages!!
++* Before breakfast!!!
+
+----
+== The Ingy Module Challenge
+
+* If you never published a module...
++  * Publish a module this year!
+
++* If you have never published in another language...
++  * Publish a module in a new language this year!
+
++* If you've never published a module
+  in six impossible languages...
+  every day...
+  before breakfast...
++  * Watch the rest of this talk!!!
+
+----
+== Introducing C'Dent
+
+* I am working on a new Programming Language
+                        --------------------
+* It is called "C'Dent"
+
++* The World has too many programming languages already??!!
++* YES, EXACTLY!
+
++* This is why I started C'Dent!!
+
+----
+== What is C'Dent?
+
+* C'Dent is a "Portable Module Language"
+
+* NO NEW SYNTAX!
+* NO NEW RUNTIME!
+* One common Object Oriented Model
+
+* Write Once, Upload Everywhere - WOUE? :\
+* Hack Once, Please Everyone - HOPE! :)
+
+----
+== C'Dent Syntaxen
+
+C'Dent lets you write modules in:
+
+* Perl
+* Python
+* Ruby
+* JavaScript
+
++Very strict subsets of these...
+
+----
+== C'Dent Runtimes
+
+C'Dent lets you compile modules to:
+
+* Perl
+* Python
+* PHP
+* Ruby
+
++* JavaScript
+* Java
+* Python 3
+* Perl 6
+
++* Scala
+* Go
+* ActionScript
+* NQP
+
+----
+== Who is C'Dent?
+
+* C'Dent was named after my friend, Chris Dent
+* aka cdent
+* I bought cdent.org in February 2007
+* I am addicted to domain names and projects
+
+* C'Dent also means:
+
+      Common'DEnomiNaTor
+
+* It finds the common, useful subset
+
+----
+== Object Oriented Hello, world
+
+* On a flight from NY to Seattle, March 3rd 2010
+* I wrote hello_world in 9 languages
+* But with a small twist...
+
++I used OO modules!!
+
+---- include hello-world
+
+---- include world-modules
+
+----
+== Dive into C'Dent
+
+> cdent --help
+> cdent --version
+
+> cdent --compile --in=world.py --out=rb
+> cdent --compile --in=world.py --out=php
+> cdent --compile --in=world.py --out=java
+
++>>gnome-terminal
+----
+== How C'Dent works (Step 1)
+
+* C'Dent defines a common Abstract Structure Tree
+* From this structure you can emit equivalent modules
+  * In many many languages
+* The world module tree can be viewed in yaml.
+
+> cdent --compile --in=world.py --out=cd.yaml
+
++>>gnome-terminal
+----
+== How C'Dent works (Step 2)
+
+* Define some syntax to parse into this tree...
+* ... and you are DONE!!
+
++* C'Dent doesn't define a syntax...
++* It defines 4!!
+
++* Python, Ruby, Perl and Javacript
+
+----
+== C'Dent is Alive
+
+* C'Dent is a compiler.
+* Get it here: http://pypi.python.org/pypi/cdent/
+
+    pip install cdent
+
+or:
+
+    easy_install cdent
+
+or
+
+    git clone git://github.com/ingydotnet/cdent.git
+
+----
+== How C'Dent compilation works (Overview)
+
+* Parse - Source to AST
+  * Pegex
+
+* Analyze - Detect and Validate types
+
+    ( .cd AST form )
+
+* Emit - Create language specific modules
+
+----
+== C'Dent implementation
+
+* C'Dent is currently a Python implementation
+* I chose Python because it has the best YAML support
+
+* C'Dent has **NO** dependency on Python!
+
+    OR ANY OTHER LANGUAGE
+
+* C'Dent uses very Acmeist code
+* Pegex
+* Can be switched to a new language at any time
+
+* Will C'Dent be self-hosted???
+
+----
+== Error Handling
+
+* Type errors are detected after parsing
+  * AST contains line number info
+* Demo a current parse error
+
++>>gnome-terminal
+----
+== C'Dent is Statically Typed!!
+
+* OSDC Langs are dynamically, and often weakly, typed
+* AST needs exact types to generate code
+* Simple example:
+
+   if str == 'foo' or num == 42:
+   if ($str eq 'foo' or $num == 42) {
+
+* C'Dent scans the AST and assigns a type to every object
+* If it can't find the type or finds a mismatch...
+  ... it's a *compile-time* error.
+
+* At runtime there is no extra type checking
+
+----
+== C'Dent Design Goals
+
+* Find a usable OO subset
+* Reuse when possible
+  * Runtime when not possible
+* Make Foo.cd.* modules actually work.
+* Make Foo.* modules nice to read.
+* Don't use more runtime than you need.
+
+----
+== C - The Ultimate Backend
+
+* If C'Dent can compile to C
+* We get fast modules for free
+* Python -> C + SWIG -> Python
+* People will target C'Dent for easy speed
+* And Everyone (Ruby, Perl, etc) will WIN!
+
+----
+
+== Packaging Acmeism...
+
+* C'Dent is not enough
+* You need at least 2 other things:
+  1) Portable tests
+  2) Portable documentation
+
++* Luckily I have projects for both!!
+
++* TestML - testml.org
+* Stardoc - stardoc.org
+
+----
+== TestML
+
+* What good are modules without tests?
+
++* What good are Portable modules without Portable tests?
+
+* TestML is an agnostic unit test language
+  * Implemented in every C'Dent target language
+
+* TDD meets Acmeism!
+
+  http://testml.org
+----
+== Introducing TestML
+
+* TestML is Acmeist data driven unit testing
+* Based on Test-Base (Perl & JavaScript)
+
+* Currently implemented in:
+  * Perl 5
+  * Perl 6
+  * Python
+
+* Who wants to help me with Ruby?
+----
+== TestML Langauge
+
+* Look at ../testml-pm/t
+----
+== TestML Design Goals
+
+* TestML use portable coding
+* Pegex to parse the language
+
+* TestML works with multiple test *frameworks*
+* Python == unittest, py.test, nose
+* Runner class for each framework
+
+* Language specific code goes in a Bridge class
+* Bridge classes may one day be C'Dent!
+
+----
+== Perl 5 and Perl 6
+
+* Rakudo is the new Perl 6 engine
+* Perl 6 is vastly different from Perl 5
+* All the good modules need to be rewritten
+* It would be great if they passed the same tests
+
+----
+== Introducing Pegex
+
+* Pegex - Acmeist Parser Generator Language
+
+* PEG + Regex = Pegex
+  * Parsing Expression Grammar
+    * Perl 6 Rules is a PEG (S05)
+  * Regular Expression
+
+----
+== HOW to make a Pegex...
+
+* Take the best part of Perl 6
++  * Perl 6 Rules!!
++* Take the best parts of that...
++* Take the Acmeist parts of common Regexes
+
++* Mix it all up
+
+    Pegex is Simple, Powerful, Fast, Elegant
+
+    and Acmeist. (It works for everyone)
+
+----
+== Except Perl 6!
+
+* Pegex requires a PCRE style regex facility
+* Rakudo only has Perl 6 Rules...
+----
+== Show P6Rules and Pegex
+
+* Grammars for the TestML language
+
+* ../testml-pm6/lib/TestML/Parser/Grammar.pm
+* ../testml-pgx/testml.pgx
+----
+== Pegex is key to Acmeism
+
+* TestML
+* C'Dent
+* YAML
+* JSYNC
+
+* All need parsers
+* Pegex grammars can generate parsers in all Acmeist languages
+----
+== Introducing JSYNC
+
+* JSON is a syntactic subset of YAML
+  * but in common, they are very different
+* JSON is also a *model* subset of YAML
+* It is only missing two main things: types and references
+* And a few small things like non-string keys
+
+* JSYNC adds these things to JSON
+* Giving if the full power of YAML
+
++>>firefox http://jsync.org
+----
+== JSYNC Implementations
+
+* Fledgling Perl 5
+  * JSYNC.pm uses TestML tests!
+* Brand new Niezca Perl 6 (C# Mono)
+----
+== Introducing Stardoc
+
+* What good are Portable modules without Portable documentation?
+
+* Foo.rst > Foo.pod > Foo.asc > Foo.wiki > Foo.html
+
+* >>> Wikiwyg <<<
+* Wikitext.pm
+
+* #stardoc and #*doc
+* http://stardoc.org
+
+----
+== StarDoc is like C'Dent for Doc
+
+* Define a common intermediate
+* Parse and Emit
+
+* POD
+* reStructuredText
+* Markdown
+* Asciidoc
+* RDoc
+* Wiki*
+* HTML
+
+----
+== Are you an Acmeist?
+
+* Will YOU share your IDEAS with EVERYONE???
+
+   if answer is True:
+       you is Acmeist
+
+== ...
+
+== Please Join Me!!!
+
+----
+== The End
+
+== Any Questions?
+
+== http://ingydotnet.github.com/acmeism-osdcau2010-talk/
+
